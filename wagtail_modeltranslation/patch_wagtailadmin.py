@@ -89,7 +89,7 @@ class WagtailTranslator(object):
                 f.required = True
 
         # Do the same to the formsets
-        for related_name, formset in form.formsets.iteritems():
+        for related_name, formset in form.formsets.items():
             if (formset.model in WagtailTranslator._required_fields and
                     WagtailTranslator._required_fields[formset.model]):
                 for fname, f in formset.form.base_fields.items():
