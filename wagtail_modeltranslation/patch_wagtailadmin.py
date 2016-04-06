@@ -10,6 +10,7 @@ from django.db import transaction
 from django.db.models import Q
 from django.http import Http404
 from django.utils.translation import ugettext as _
+from functools import reduce
 from wagtail.wagtailadmin.edit_handlers import FieldPanel, \
     MultiFieldPanel, FieldRowPanel
 from wagtail.wagtailadmin.edit_handlers import StreamFieldPanel
